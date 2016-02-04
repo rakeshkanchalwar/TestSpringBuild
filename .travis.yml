@@ -1,1 +1,2 @@
+- script: pom.xml
 - mvn clean install

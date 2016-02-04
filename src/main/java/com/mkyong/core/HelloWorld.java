@@ -14,5 +14,6 @@ public class HelloWorld {
 	public void printHello() {
 		System.out.println("Spring 3 : Hello ! " + name);
 		System.out.println("Hello added in feature branch! " + name);
+		System.out.println("New println in development");
 	}
 }

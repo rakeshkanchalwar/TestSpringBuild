@@ -16,5 +16,6 @@ public class HelloWorld {
 		System.out.println("Hello added in feature branch! " + name);
 		System.out.println("New println in development");
 		System.out.println("Removed error");
+		System.out.println("Trying to install");
 	}
 }

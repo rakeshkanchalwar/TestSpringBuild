@@ -9,7 +9,7 @@ notifications:
     on_failure: always
 deploy:
   provider: releases
-  api_key: "d72ca9149258f36cefdf6319a1c811e2242a8f0b"
+  api_key: "d23b13f77c0705168c537383508b7cf792223e60"
   file: 
    - "/home/travis/build/rakeshkanchalwar/TestSpringBuild/"
   skip_cleanup: true

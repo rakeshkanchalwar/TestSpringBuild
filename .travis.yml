@@ -9,7 +9,8 @@ notifications:
     on_failure: always
 deploy:
   provider: releases
-  api_key: "d23b13f77c0705168c537383508b7cf792223e60"
+  api_key: 
+    secure: "GGn0jh8GQzfJaJSii+TEBKZdMM0g7sM/T4OBoodooS6t7oX1TwsdWeCEE9Cxop7DB8XHFt012GQczrDfgH0C39EysIqjjvkqFSUytt3RIQCAhg8ySemBNP2FxjFCbOcN3igCoymnbuN2m3n6W68f5QB0O4N0dCAzJ69BJ6CNRENjrLdVCKBf6J3uN5hyNqDlsqP2IAbBF0xhIi94fo/b1TM9CgDKpBIEmhFsjHEp2cTqk+aZo5djpEiOha8JhgOBbv1mWf+iq4LV6DuByd+S8jhvmb0ycXHS/6W6V5mPpvXw7B1IePrEx1iwijmBml2HPaffxMnfe5lRlJyhSxlmp9Fmi5hPLGUI79PgebZdxnfMHeYSQdIRRlp0LUnIIAUZos9z8cY7dlwuwJ73fF3IY01r7LnnD1Hy/fAU6Wey54MtiRdL/E05YUMDHnCN4cRlw9V2JY5Sz29LtaIMmb458IHTG+6FJtCgmTlMPg375FWlLWbF7HHqWQ7EXTtxDMVukExuHyLohK0CELbs/1w0e6EG46vl60N6GP0QIICiXaxir9TW0hTvAE6dLJp5Uk0PE+DfcyXS/KcVkkrLTRmeLUJWa/je7SgQOYUqiQJARzen/5ulrh9iCSe9KAnQDSn65KtyjNhUm1VC19WuVIJ17kFYh1G1dXHvLvop9ojPecQ="
   file: 
    - "/home/travis/build/rakeshkanchalwar/TestSpringBuild/"
   skip_cleanup: true

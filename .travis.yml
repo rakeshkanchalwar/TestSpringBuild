@@ -1,5 +1,5 @@
 language: java
-sudo: required
+sudo: false
 script: mvn clean install
 notifications: 
     email:

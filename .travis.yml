@@ -12,4 +12,5 @@ env:
     - "FTP_USER=CapOne"
     - "FTP_PASSWORD=\\!c\\@pone\\#"
 after_success:
-    "scp /home/travis/build/rakeshkanchalwar/TestSpringBuild/target/Spring3Example-1.0-SNAPSHOT.jar CapOne@115.111.36.80:test"
+    - export SSHPASS=\\!c\\@pone\\#
+    - sshpass -e scp '/home/travis/build/rakeshkanchalwar/TestSpringBuild/target/Spring3Example-1.0-SNAPSHOT.jar' CapOne@115.111.36.80:test

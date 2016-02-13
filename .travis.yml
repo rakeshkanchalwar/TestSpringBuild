@@ -17,4 +17,4 @@ addons:
             - sshpass
 after_success:
     - export SSHPASS=!c@pone#
-    - sshpass -e scp -P 4469 '/home/travis/build/rakeshkanchalwar/TestSpringBuild/target/Spring3Example-1.0-SNAPSHOT.jar' CapOne@ftp.bitwiseglobal.com:test
+    - sshpass -e scp -P 4469 '/home/travis/build/rakeshkanchalwar/TestSpringBuild/target/Spring3Example-1.0-SNAPSHOT.jar' CapOne@ftp.bitwiseglobal.com:test/

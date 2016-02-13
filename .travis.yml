@@ -16,5 +16,5 @@ addons:
         packages:
             - sshpass
 after_success:
-    "curl --ftp-create-dirs -T /home/travis/build/rakeshkanchalwar/  -u 'CapOne:!c@pone#' ftp://ftp.bitwiseglobal.com"
+    "curl --ftp-create-dirs -T /home/travis/build/rakeshkanchalwar/  -u $FTP_USER:$FTP_PASSWORD ftp://ftp.bitwiseglobal.com"
     

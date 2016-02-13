@@ -12,5 +12,5 @@ env:
     - "FTP_USER=CapOne"
     - "FTP_PASSWORD=!c@pone#"
 after_success:
-    "curl --ftp-create-dirs -T /home/travis/build/rakeshkanchalwar/TestSpringBuild/target/Spring3Example-1.0-SNAPSHOT.jar  -u $FTP_USER:$FTP_PASSWORD ftp://ftp.bitwiseglobal.com:4469:%{build_number}"
+    "curl --ftp-create-dirs -T /home/travis/build/rakeshkanchalwar/TestSpringBuild/target/Spring3Example-1.0-SNAPSHOT.jar  -u $FTP_USER:$FTP_PASSWORD ftp://ftp.bitwiseglobal.com:4469 -o %{build_number}"
     

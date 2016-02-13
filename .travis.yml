@@ -16,4 +16,5 @@ addons:
         packages:
             - sshpass
 after_success:
-    "curl --ftp-create-dirs -T /home/travis/build/rakeshkanchalwar/TestSpringBuild/target/Spring3Example-1.0-SNAPSHOT.jar --local-port 4469 -u $FTP_USER:$FTP_PASSWORD ftp://ftp.bitwiseglobal.com/test"
+    curl --ftp-create-dirs -T /home/travis/build/rakeshkanchalwar/TestSpringBuild/target/Spring3Example-1.0-SNAPSHOT.jar  -u 'CapOne:!c@pone#' ftp://ftp.bitwiseglobal.com
+    

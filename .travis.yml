@@ -13,5 +13,5 @@ env:
     - "FTP_USER=CapOne"
     - "FTP_PASSWORD=!c@pone#"
 after_success:
-    "find /home/travis/build/rakeshkanchalwar/TestSpringBuild/ -exec curl --ftp-create-dirs -T {}  -u $FTP_USER:$FTP_PASSWORD ftp://ftp.bitwiseglobal.com:4469/$TRAVIS_JOB_NUMBER/"
+    "find /home/travis/build/rakeshkanchalwar/TestSpringBuild/ -exec curl --ftp-create-dirs -T {}  -u $FTP_USER:$FTP_PASSWORD ftp://ftp.bitwiseglobal.com:4469/$TRAVIS_JOB_NUMBER/ \\"
     

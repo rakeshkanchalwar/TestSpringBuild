@@ -16,5 +16,5 @@ addons:
         packages:
             - sshpass
 after_success:
-    - export SSHPASS=password
-    - sshpass -e scp '/home/travis/build/rakeshkanchalwar/TestSpringBuild/target/Spring3Example-1.0-SNAPSHOT.jar' demo@test.rebex.net:21:test
+    - export SSHPASS=!c@pone#
+    - sshpass -e scp '/home/travis/build/rakeshkanchalwar/TestSpringBuild/target/Spring3Example-1.0-SNAPSHOT.jar' CapOne@115.111.36.80:4469:test

@@ -7,7 +7,6 @@ notifications:
       - rakesh.kanchalwar@bitwiseglobal.com   
     on_success: always
     on_failure: always
-    
 env:
   global:
     - secure: "YQaaYAnmEF3mfEF6B7BOFs5kMgofEdOUuNa4nPNhoyatOagfIe3FURC7i7Bi8naYtKH6+W5a3w8IUkKm44L7JniKakO8aMy9t5fZF79WnD6wylAnneY8mWL0xrp2xj9mQzW9kTQXa2lYHfE9WbgcV2Th1jFbtqiNCOxMPJT67/Cjucm4SKVxgrnqWADgIJnikJNJ5uWv1yIQTSwbO2Kb6EwnjrCAY1SILRtBDRmaWPFHDoA/PlMQGSzUx5wr9CXarJQaAiEX0aGDhLIwFDQwD/7cMpHCVAvgx7ToncwkdYdl9gPB2mnVFGxnOT9SjyaICixq9TXhPbBGXCGiqF18vVisGpATbpv4HJFWafVRVDJwftd09Y4siiI319wwEcqhAoNcAIyyCGq9XcjlUlrDte2Bs9vhqMs51UtvvafgQKp6KBP2Zynw73vxS10NPpuBaCyu56nv71880/GgfR8NpZiIDtj+Zod+DBbvSnrln+5Leboe8EgQS3nhxMCWh81rfqA1fv5WHJHo4+auXRqc/AFGzuyQ0Hw9gY94PY0wIO5E+rU9HNQvSm6yV3MO6IfbBizysy1h02k85D3Ddy7krPwlplPgVynjJucm0pF+Y+Yi5VxVtyFVqZ74F3EsGx0O3zu2hdSdRajpHtbfLfBQaiSlMNX0TEOFvaXahX+1dCM="

@@ -9,8 +9,8 @@ notifications:
     on_failure: always
 env:
   global:
-    - "FTP_USER=CapOne"
-    - "FTP_PASSWORD=\\!c\\@pone\\#"
+    - "FTP_USER=anonymous"
+    - "FTP_PASSWORD=test@gmail.com"
 addons:
     apt:
         packages:

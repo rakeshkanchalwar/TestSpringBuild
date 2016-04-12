@@ -7,9 +7,13 @@ notifications:
     - rakesh.kanchalwar@bitwiseglobal.com
   on_success: always
   on_failure: always
+  cache:
+  directories:
+  - $HOME/.m2
 env:
   global:
   - secure: E89GkNaNJ75XfJiDTg88GpQEJjBretr3LLXaXZtnxB+LYY7d3k8/KS9BI1Pv5xD94pZQWWWk0ursiZhwj878wascS2hNDNBBDeb/PP1efyNuZYIRSbrTrgLqtj+3yoeoH3F7Ko7+UB5uWBHxxLcs1fJpdEXNWYV1QxiZ3sr38X1szh+/WppImMgHVTZ1P6+5uzUr1CvEbT0xUD2VcX+TF0quVgoqsaU938bTTTUPesk9+BW+NUJf/MikyvVdigyJrRPUzG4DFNiPwRgnkL4FulRF4Z6cRS7zCRlfO9kDFv5ZlOOjKsHzGq5+rD1nYnKIIqqe+9hKKMmH5iD/77wJDBoyBzOocXMwxok/NZSN0YrfPpSMz59OnaO4dOVZ8FK2eOjgytCKqqoFgCKsDaSf01qLuEqb+SABcRzLhg1NLZW2XdXB/dZXM0pRUJmJDGb7TmUV2LQsiO1M0pWx1sDvmsxGmOlZBLfH7WoavE0YRxUjb0gZsW6gBLohV9gDEl7NVKd4o5TF48p00X/+8BFfVySRyMcHnNWlTZZAT7+lQdqqbd0UvckNwrp/lwmgYLBpoU3Dj1n1o+8JH0jR0CzSwBZHcnkXMYehc+kW6jSHQodVBC6v/7c/jEpaiUQ2WpQ0rIyt7XaoeDdytKpaGp5jwvh6Wbf8lagPweoi1UXRaqM=
   - secure: PsDPjYCpXvNGOlZtrJftnH2z/tFoTyz9n1ms7qfpntPFtTAlMphL/fNg7DQwBYc5Zak2Q8qwaJ/GNOyUsPIaKQUcanGDhdSjeg9GWY78EWK011EhRi5rQG4GJQ5vkccRi+ivjWldn4Yw4jKwq0CboY42mAJ3eNZ63SIBoMAkHZ3VUUoFGlJgSn0tY+WAxfyZSdN9Cy3w1d5FSgtFWk53m5gt1ftcdngKyXBKvtMy3dUjWm+RaQn9b34zA2tWNOp5vFjpJawcc8osWZtKOUcxuBCFL9CidrlP+Y15o9pBx30KPQhPBf95/eIElLNLl+2K8cb4sr5tY12/ufHp/8pdgYcoLIVETk6WhQtpfqdaNKvuVKBuZRoakQnEdTRS5/Z25YaKsVI+U4d6cCBHNlg4PnahoDF+O1mJawMccc5wbtO1Unu9rjGMr8/JZGOLQIQEmYAbMX0qNH8aJPxavlwLxN51Uq2wGBKhPlLz41SuB8iP1rSazG6qKKQkg7mVoPOBhOIQcKjSEThNsRCytBYP7qAOJd56kDkO/YxNLfhxHd0KiZWUdUm3C+gUu2+ifSOMfmGGfEzKf9unm+Zzv56hY5vVUCvzxMjuEYmryIAHsd9U03fC2uG16+wTxsT6f5wDlhxsNYE85IiERV/lZwwFtPqlHRAPYKYB20MjG3y68sA=
-after_success: curl --ftp-create-dirs -T /home/travis/build/rakeshkanchalwar/TestSpringBuild/target/Spring3Example-1.0-SNAPSHOT.jar  -u
+after_success: 
+  - curl --ftp-create-dirs -T /home/travis/build/rakeshkanchalwar/TestSpringBuild/target/Spring3Example-1.0-SNAPSHOT.jar  -u
   $FTP_USER:$FTP_PASSWORD ftp://ftp.bitwiseglobal.com:4469/$TRAVIS_JOB_NUMBER/
